@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Raleway',sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  /*  background: $yellow; */
+  border-radius: 5rem;
+}
+
+body {
+  background: #E9E9E9;
+}
+
+.navbar {
+  background: #ff6f00;
+  width: 100%;
+  padding: 2%;
+}
+
+.navbar .logo .logo_web_movil {
+  width: 40%;
+}
+
+.navbar ul {
+  background: #FF9800;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.navbar ul li a {
+  color: #fff;
+}
+/*# sourceMappingURL=styl.css.map */
