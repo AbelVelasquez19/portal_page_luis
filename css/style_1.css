@@ -1,0 +1,646 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Raleway',sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  /*  background: $yellow; */
+  border-radius: 5rem;
+}
+
+body {
+  background: #E9E9E9;
+}
+
+.navbar {
+  background: #ff6f00;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.navbar .logo {
+  margin-left: 30%;
+}
+
+.navbar .logo img {
+  max-width: 180px;
+}
+
+.navbar ul {
+  margin-top: 15%;
+}
+
+.navbar ul li {
+  margin: 2rem 0;
+  list-style: none;
+  border-bottom: 1px solid #ff6f00;
+  padding: 1rem 0;
+}
+
+.navbar ul li a {
+  margin: 0 5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar .social-profile {
+  text-align: center;
+}
+
+.navbar .social-profile span {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #fff;
+}
+
+.navbar .social-profile span:hover {
+  color: #FF9800;
+}
+
+.section {
+  width: 70%;
+  background: #fff;
+  margin-left: 5%;
+}
+
+.section .section-home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4% 0 4% 0;
+  position: relative;
+}
+
+.section .section-home .title {
+  padding: 15% 0 0 10%;
+}
+
+.section .section-home .title h2 {
+  font-size: 5rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: 2%;
+}
+
+.section .section-home .title button {
+  padding: 5%;
+  width: 40%;
+  margin-top: 15%;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.section .section-home .title button.btn-afiliate {
+  border: 2px solid #FF9800;
+  background: none;
+  color: #FF9800;
+}
+
+.section .section-home .title button.btn-donar {
+  background: #ff6f00;
+  color: #fff;
+}
+
+.section .section-home .title button.btn-afiliate::before {
+  content: 'AFÍLIATE';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #FF9800;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.section .section-home .title button.btn-afiliate::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.section .section-home .title button.btn-afiliate:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.section .section-home .title button.btn-donar::before {
+  content: 'DONAR';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  color: #ff6f00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  border: 2px solid #ff6f00;
+}
+
+.section .section-home .title button.btn-donar::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.section .section-home .title button.btn-donar:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.section .section-home .bar-tile {
+  width: 10%;
+  height: 750px;
+  background: #ff6f00;
+}
+
+.section .section-home img {
+  position: absolute;
+  right: 7%;
+  bottom: 12%;
+}
+
+.section .section-home img:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.section .section-profesion {
+  padding: 0 8% 0 8%;
+}
+
+.section .section-profesion h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section .section-profesion .box-level {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+}
+
+.section .section-profesion .box-level .box {
+  width: 50%;
+  margin: 0 20px 0 0;
+}
+
+.section .section-profesion .box-level .box .content {
+  margin-bottom: 40px;
+}
+
+.section .section-profesion .box-level .box .content .progress {
+  width: 100%;
+  height: 12px;
+  background-color: pink;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.section .section-profesion .box-level .box .content .progress span {
+  background: #ff6f00;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-compromiso {
+  width: 90%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-consistencia {
+  width: 80%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-autocritica {
+  width: 85%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-lirderazgo {
+  width: 95%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-analisis {
+  width: 85%;
+}
+
+.section .section-profesion .box-level .box .content .progress .progress-transparencia {
+  width: 90%;
+}
+
+.section .section-profesion .box-level .box .content .progress::before {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: #FF9800;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  border-radius: 5px;
+  right: 10px;
+  top: -20px;
+  font-weight: bold;
+}
+
+.section .section-profesion .box-level .box .content .compromiso::before {
+  content: '90%';
+}
+
+.section .section-profesion .box-level .box .content .consistencia::before {
+  content: '80%';
+}
+
+.section .section-profesion .box-level .box .content .autocritica::before {
+  content: '85%';
+}
+
+.section .section-profesion .box-level .box .content .lirderazgo::before {
+  content: '95%';
+}
+
+.section .section-profesion .box-level .box .content .analisis::before {
+  content: '85%';
+}
+
+.section .section-profesion .box-level .box .content .transparencia::before {
+  content: '90%';
+}
+
+.section .section-profesion .box-level .box .content span.title-level {
+  font-weight: bold;
+  color: #6e6b6b;
+}
+
+.section .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .action .action-profile {
+  padding: 1%;
+  width: 15%;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  background: #FF9800;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .action button.action-profile::before {
+  content: 'DONAR';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  color: #FF9800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  border: 2px solid #FF9800;
+}
+
+.section .action button.action-profile::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.section .action button.action-profile:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.section .layout-type-grid {
+  width: 100%;
+  padding: 0 8% 0 8%;
+}
+
+.section .layout-type-grid h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section .layout-type-grid .jet-images-layout__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item {
+  width: 100%;
+  height: 320px;
+  position: relative;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item a img {
+  width: 100%;
+  height: 100%;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item a .layout-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #FF9800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item a .layout-description h4 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item a .layout-description span {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.section .layout-type-grid .jet-images-layout__inner .jet-images-layout__item a:hover .layout-description {
+  visibility: visible;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.section .section-contact {
+  width: 100%;
+  padding: 0 8% 0 8%;
+}
+
+.section .section-contact h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 40px 0px 40px 0;
+}
+
+.section .section-contact .section-contact-conteiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-info {
+  width: 100%;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-info .box-info {
+  width: 90%;
+  padding: 20px;
+  -webkit-box-shadow: 1px 2px 5px  #a2a0a0;
+          box-shadow: 1px 2px 5px  #a2a0a0;
+  margin-top: 15px;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-info .box-info h2 {
+  margin: 10px 0 20px 0;
+  font-size: 2rem;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-info .box-info p {
+  margin: 0px 0 15px 0;
+  font-size: 1.5rem;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-info .box-info span {
+  font-size: 1.2rem;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms {
+  width: 100%;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-shadow: 1px 2px 5px  #a2a0a0;
+          box-shadow: 1px 2px 5px  #a2a0a0;
+  background: #FF9800;
+  margin-top: 15px;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group {
+  width: 100%;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group input {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group textarea {
+  width: 100%;
+  height: 175px;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  color: #E9E9E9;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group ::-webkit-input-placeholder {
+  color: #E9E9E9;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group :-ms-input-placeholder {
+  color: #E9E9E9;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group ::-ms-input-placeholder {
+  color: #E9E9E9;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms .from-group ::placeholder {
+  color: #E9E9E9;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms input.btn-enviar {
+  width: 100%;
+  padding: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: #ff6f00;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.section .section-contact .section-contact-conteiner .section-contact-forms .box-forms input.btn-enviar:hover {
+  background: #fff;
+  color: #ff6f00;
+}
+
+.section .footer {
+  padding: 30px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: #a5a2a2;
+}
+/*# sourceMappingURL=style_1.css.map */
