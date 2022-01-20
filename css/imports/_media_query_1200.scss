@@ -1,0 +1,84 @@
+/* pantallas grandes */
+@media (min-width: 1200px) {
+    .navbar{
+        width: 20%;
+        height: 100vh;
+        right: 0;
+        .logo{
+            margin-left: 30%;
+            .logo_web_movil{
+                display: none;
+            }
+            i{
+                display: none;
+            }
+            .logo_web_pc{
+                display: block;
+                max-width: 180px;
+            }
+        }
+
+        ul{
+            background:none;
+            clip-path: polygon(0 0,100% 0,100% 100%,0 100%); 
+            li{
+                padding-left: 10%;
+                border-bottom: 1px solid #ef8636e4;
+                a{
+                    margin: 5%; 
+                    height: 100%;
+                    position: relative;    
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        background: $white;
+                        height: 2px;
+                        width: 0;
+                        left: 0;
+                        bottom: -7px;
+                        transition: 0.1s;
+                    }
+      
+                    &:hover::after{
+                      width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section{
+        width: 70%;
+        background: $white;
+        margin-left: 5%;
+        position: relative;
+        .section_home{
+            margin-top: 0%;
+            background: blue;
+            img{
+                width:30%;
+                position: relative;
+                z-index: 1;
+            }
+            .title{
+                background: green;
+            }
+            img:hover{
+                transform: translateY(-8px);
+                cursor: pointer;
+            }
+
+            .bar-tile{
+                background:$ping-color;   
+                bottom: -7%;
+                display: block;
+                height:100%;
+                position: absolute;
+                right: 0;
+                width: 15%;
+                z-index: 0;
+            }
+        }
+    }    
+}

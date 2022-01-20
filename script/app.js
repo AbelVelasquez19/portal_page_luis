@@ -4,7 +4,7 @@ const displayNoneNav_link= document.querySelector('.nav_link');
 const menu_btn = document.querySelector("#menu-btn");
 
 const  logo_control = ()=>{
-    displayNoneLogoWepPc.style.display='none';
+   // displayNoneLogoWepPc.style.display='none';
    // displayNoneNav_lin.style.display='none';
 }
 

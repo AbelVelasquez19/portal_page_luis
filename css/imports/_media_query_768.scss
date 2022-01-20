@@ -1,0 +1,113 @@
+/* tabletas */
+@media (min-width: 768px) {
+    .navbar{
+        .logo{
+            padding: 0 2%; 
+            .logo_web_movil{
+                width: 30%;
+            }
+            I{
+                font-size: 3em;
+            }
+        }
+    }
+    .section{
+        .section_home{
+            justify-content: end;
+            align-items: flex-end;
+            img{
+                width: 50%;
+             }
+            .title{
+                left: 0;
+                padding: 5%;
+                bottom: 10%;
+                width: 50%;
+                h2{
+                    font-size: 4em;
+                    letter-spacing: 3px;
+                }
+                button{
+                        font-size: 1.5em;   
+                        margin-top: 20%;
+                        padding: 5%;
+                        width: 40%;
+                    
+                }
+            }
+            .bar-tile{
+                    background:$ping-color;   
+                    bottom: -7%;
+                    display: block;
+                    height: 60px;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -1;
+            }
+        }
+
+        .section-profesion{
+            h3{
+                font-size: 2.5em;
+            }
+            .box-level{
+                flex-direction: row;
+                .box{
+                    .content{
+                        margin-bottom: 20px;
+                        .progress{
+                            width: 90%;
+                            height: 15px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .action{
+            .action-profile{
+                width: 20%;
+            } 
+        }
+
+        .layout-type-grid{
+            margin-top: 10%;
+            h3{
+                font-size: 2.5em;
+            }
+            .jet-images-layout__inner{
+                grid-template-columns: auto auto;
+            }
+        }
+
+        .section-contact{
+            margin-top: 10%;
+            padding: 2%;
+            h3{
+                font-size: 2.5em;
+            }
+            .section-contact-conteiner{
+                grid-template-columns: auto auto;
+                grid-gap: 0px;
+                width: 100%;
+                .section-contact-info{
+                    width: 80%;
+                }
+                .section-contact-forms{
+                    width:100%;
+                    .box-forms{
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }    
+}
+  
+/* escritorio normales  1024*/
+/* @media (min-width: 992px) {
+
+}
+   */
